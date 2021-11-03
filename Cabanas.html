@@ -6,41 +6,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/funcionesCabanas.js"></script>
     <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+    
 </head>
 
 <body onload="getDataCategoria()">
     <center>
-        <a href="Cabanas.html" title="CABAÑAS">CABAÑAS</a>&nbsp;&nbsp;&nbsp;
-        <a href="Categorias.html" title="CATEGORIAS">CATEGORIAS</a>&nbsp;&nbsp;&nbsp;
-        <a href="Clientes.html" title="CLIENTES">CLIENTES</a>&nbsp;&nbsp;&nbsp;
-        <a href="Mensaje.html" title="MENSAJES">MENSAJES</a>&nbsp;&nbsp;&nbsp;
-        <a href="Reservas.html" title="RESERVAS">RESERVAS</a>&nbsp;&nbsp;&nbsp;
-        <a href="Calificacion.html" title="CALIFICACIONES">CALIFICACIONES</a>&nbsp;&nbsp;&nbsp;
-        <a href="Usuarios.html" title="USUARIOS">USUARIOS</a>
+        <a href="Cabanas.html" title="CABAÑAS">Cabañas</a>&nbsp;&nbsp;&nbsp;
+        <a href="Categorias.html" title="CATEGORIAS">Categorias</a>&nbsp;&nbsp;&nbsp;
+        <a href="Clientes.html" title="CLIENTES">Clientes</a>&nbsp;&nbsp;&nbsp;
+        <a href="Mensaje.html" title="MENSAJES">Mensajes</a>&nbsp;&nbsp;&nbsp;
+        <a href="Reservas.html" title="RESERVAS">Reservas</a>&nbsp;&nbsp;&nbsp;
+        <a href="Calificacion.html" title="CALIFICACIONES">Calificaciones</a>&nbsp;&nbsp;&nbsp;
+        <a href="Usuarios.html" title="USUARIOS">Usuarios</a>
+        <hr>
         <h2>GESTIÓN CABAÑA </h2>
         <fieldset style="width: 30%">
             <legend>Creación de la cabaña</legend>
             <table>
                 <tr>
                 <tr>
-                    <th>NOMBRE:</th>
+                    <th>Nombre:</th>
                     <td><input type="text" id="nombreCab" maxlength="45" size="45"> </td>
                 </tr>
                 <tr>
-                    <th>MARCA:</th>
+                    <th>Marca:</th>
                     <td><input type="text" id="marca" maxlength="45" size="45"> </td>
                 </tr>
                 <tr>
-                    <th>CANTIDAD CUARTOS:</th>
+                    <th>Cantidad de Habitaciones:</th>
                     <td><input type="number" id="cuartos"> </td>
                 </tr>
                 <tr>
-                    <th>DESCRIPCIÓN:</th>
+                    <th>Descripción:</th>
                     <td><input type="text" id="descripcionC" maxlength="250" size="45"> </td>
                 </tr>
                 <tr>
-                    <th>CATEGORÍA:</th>
+                    <th>Categoría:</th>
                     <td>
                         <select id="categoria" required>
                         </select>
@@ -48,21 +49,24 @@
                 </tr>
                 <tr>
                     <td colspan="3">
-                        <input type="button" id="guardaCab" value="GUARDAR" onclick="guardarCabana()">
-                        <input type="button"  id="actualizaCab" value="ACTUALIZAR" onclick="editarCabana() " disabled="true">
+                        <input type="button" id="guardaCab" value="Guardar Cabaña" onclick="guardarCabana()">
+                        <input type="button"  id="actualizaCab" value="Actualizar Cabaña" onclick="editarCabana() " disabled="true">
                     </td>                   
                 </tr>
                 </tr>
             </table>
         </fieldset>
+        <br>
+        <hr>
         <h2> CONSULTA DE CABAÑAS</h2>
-        <fieldset style="width: 30%">
+        <fieldset style="width: 45%">
             <legend>Consulta</legend>
             <table>
                 <tr>
                 <tr>
                     <td colspan="3">
-                        <input type="button" value="CONSULTAR" onclick="consultarCabanaTodo()">
+                        <br>
+                        <input type="button" value="Consultar Cabaña " onclick="consultarCabanaTodo()">
                     </td>
                 </tr>
                 <tr>
