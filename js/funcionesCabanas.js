@@ -64,7 +64,7 @@ function guardarCabana() {
         var datosaEnviar = JSON.stringify(datos);
 
         $.ajax({
-            url: 'http://168.138.144.46:8080/api/Cabin/save',
+            url: 'http://168.138.141.115:8080/api/Cabin/save',
             data: datosaEnviar,
             type: 'POST',
             dataType: 'json',
@@ -85,7 +85,7 @@ function guardarCabana() {
 
 function traeEditarCabana(ide) {
     $.ajax({
-        url: 'http://168.138.144.46:8080/api/Cabin/' + ide,
+        url: 'http://168.138.141.115:8080/api/Cabin/' + ide,
         type: 'GET',
         dataType: 'json',
         success: function (respuesta) {
